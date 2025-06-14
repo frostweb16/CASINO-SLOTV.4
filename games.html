@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Casino Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-content" id="main-content">
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="header">
+            <div class="balance">Saldo: Rp <span id="balance-amount">5000</span></div>
+            <button class="top-up-btn" onclick="topUp()">Top Up</button>
+        </div>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x150?text=Black+Jack" alt="Black Jack">
+                <h3>BlackJack</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x150?text=Teen+Patti" alt="Teen Patti">
+                <h3>TeenPatti</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x150?text=Roulette" alt="Roulette">
+                <h3>Roulette</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x150?text=Tembak+Ikan" alt="Tembak Ikan">
+                <h3>Tembak Ikan</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x150?text=Sic+Bo" alt="Sic Bo">
+                <h3>Sic Bo</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x150?text=Gates+of+Olympus" alt="Gates of Olympus">
+                <h3>Gates of Olympus</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x150?text=Treasure+of+Aztec" alt="Treasure of Aztec">
+                <h3>Treasure of Aztec</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="profile">
+            <img src="https://via.placeholder.com/80?text=Avatar" alt="Avatar">
+            <h3>ID: <span id="user-id">Pengguna</span></h3>
+        </div>
+        <ul>
+            <li><a href="/games.html">Beranda</a></li>
+            <li><a href="#">Berita</a></li>
+            <li><a href="tel:+628984484700">Hubungi Kami</a></li>
+            <li><a href="#" onclick="showSettings()">Pengaturan</a></li>
+        </ul>
+    </div>
+    <!-- Settings Modal -->
+    <div class="settings-modal" id="settings-modal">
+        <div class="settings-box">
+            <h2>Pengaturan</h2>
+            <input type="file" id="profile-pic" accept="image/*">
+            <input type="text" id="phone-number" placeholder="Nomor Baru">
+            <input type="password" id="new-password" placeholder="Password Baru">
+            <button onclick="saveSettings()">Simpan</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
